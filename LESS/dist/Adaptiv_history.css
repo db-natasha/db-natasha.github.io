@@ -94,6 +94,9 @@
     width: 150px;
     margin: 0 auto;
   }
+  .navigation ul {
+    column-gap: 17px;
+  }
   .card {
     column-gap: 25px;
   }
