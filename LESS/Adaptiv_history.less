@@ -1,0 +1,689 @@
+@import url("Variables.less");
+
+@media all and (max-width:1200px) {
+    .container {
+        max-width: 950px;
+    }
+
+    .card {
+        column-gap: 60px;
+
+        & img {
+            width: 260px;
+            height: 328px;
+        }
+    }
+
+    p {
+        max-width: 400px;
+    }
+
+    .cards {
+        &__pattern {
+            width: 940px;
+        }
+    }
+
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        overflow: hidden;
+
+        &__history {
+            &__description {
+                max-width: 450px;
+            }
+
+            &__img {
+                width: 350px;
+                height: 300px;
+            }
+        }
+
+        &__interior {
+            &__img {
+                width: 283px;
+                height: 380px;
+            }
+        }
+    }
+
+    .swiper {
+        max-width: 940px;
+        padding: 0 15px;
+    }
+
+    .swiper-slide {
+        max-width: 283px;
+    }
+
+    .reservation {
+        justify-content: center;
+        column-gap: 60px;
+
+        &__description {
+            max-width: 366px;
+        }
+
+        &__card {
+
+            grid-template-columns: 17px minmax(100px, 250px) 30px 35px 108px 19px;
+            grid-template-rows: repeat(5, 19px auto) 46px;
+
+            &__pattern {
+                row-gap: 6px;
+                width: 101px;
+                position: absolute;
+                top: 144px;
+                left: 370px;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+}
+
+@media all and (max-width:992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .logotip {
+        font-size: 22px;
+    }
+
+    .navigation {
+        column-gap: 11px;
+        font-size: 14px;
+
+        &__button {
+            top: 4px;
+            right: 18px;
+            width: 12px;
+            height: 37px;
+
+            & img {
+                width: 25px;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+        &__text-search {
+            padding: 10px 20px 11px 21px;
+        }
+
+        & form {
+            position: relative;
+            width: 150px;
+            margin: 0 auto;
+        }
+    }
+
+
+
+    .card {
+        column-gap: 25px;
+
+        &__content {
+            flex-direction: column;
+            row-gap: 25px;
+            text-align: right;
+
+            &:nth-child(odd) {
+                flex-direction: column-reverse;
+                text-align: left;
+            }
+
+            & p {
+                max-width: 340px;
+            }
+        }
+
+        & img {
+            width: 285px;
+            height: 275px;
+        }
+    }
+
+    p {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .cards {
+        &__pattern {
+            width: 634px;
+        }
+        margin-bottom: 20px;
+    }
+
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        overflow: hidden;
+
+        &__history {
+            &__description {
+                max-width: 450px;
+            }
+
+            &__img {
+                width: 350px;
+                height: 300px;
+            }
+        }
+
+        &__interior {
+            &__img {
+                width: 320px;
+                height: 440px;
+            }
+        }
+    }
+
+    .swiper {
+        max-width: 700px;
+        padding: 0 15px;
+    }
+
+    .swiper-slide {
+        max-width: 325px;
+    }
+
+    .reservation {
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        flex-direction: column;
+
+        &__description {
+
+            & p,
+            & h2 {
+                max-width: 450px;
+                text-align: center;
+            }
+
+        }
+
+        &__card {
+            grid-template-areas:
+                ". . . . . ."
+                ". name name . . ."
+                ". . . . . ."
+                ". surname surname . . ."
+                ". . . . . ."
+                ". phone phone . . ."
+                ". . . . . ."
+                ". email email . . ."
+                ". . . . . . "
+                ". visitors visitors . . ."
+                ". . . . . ."
+                ". date . . . ."
+                ". . . . . ."
+                ". time . . . ."
+                ". . . . . ."
+                ". . . . send ."
+                ". . . . . .";
+            max-width: 550px;
+            grid-template-columns: 17px minmax(100px, 250px) 100px 20px 100px 19px;
+            grid-template-rows: repeat(8, 25px auto) 30px;
+
+            &__pattern {
+                row-gap: 6px;
+                width: 101px;
+                position: absolute;
+                top: 293px;
+                left: 430px;
+            }
+        }
+    }
+
+    input {
+        padding: 10px 18px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+}
+
+@media all and (max-width:768px) {
+    .container {
+        max-width: 535px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    footer {
+        background-color: @dark-color;
+        padding: 12px 0;
+    }
+
+    .card {
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        text-align: justify;
+        &:nth-of-type(odd){
+            flex-direction: column-reverse;
+        }
+        &:nth-of-type(even){
+            flex-direction: column;
+        }
+        &__content {
+            flex-direction: column;
+            row-gap: 20px;
+            text-align: justify;
+
+           
+            &:nth-child(odd) {
+                flex-direction: column-reverse;
+                text-align: justify;
+            }
+            &__button {
+                padding: 14px 15px;
+                font-size: 15px;
+            }
+
+            & p {
+                max-width: 340px;
+            }
+        }
+
+        & img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    p {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .cards {
+        &__pattern {
+            width: 510px;
+        }
+    }
+
+    .restaurant {
+        &__history {
+            flex-direction: column;
+            row-gap: 25px;
+            align-items: center;
+
+            &__description {
+                max-width: 464px;
+                text-align: justify;
+            }
+
+            &__img {
+                width: 350px;
+                height: 300px;
+            }
+
+            &__pattern {
+                width: 395px;
+                align-self: center;
+            }
+
+
+        }
+
+        &__interior {
+            &__img {
+                width: 228px;
+                height: 372px;
+            }
+        }
+    }
+
+    .reservation {
+        &__card {
+            max-width: 445px;
+            &__pattern {
+                top: 370px;
+                left: 365px;
+            }
+        }
+    }
+
+    .swiper {
+        max-width: 510px;
+        padding: 0 10px;
+    }
+    .swiper-slide {
+        max-width: 230px;
+    }
+    .footer {
+        &__info {
+            &__adress img,
+            &__media img {
+                width: 28px;
+                height: 25px;
+
+            }
+        }
+    }
+    .burger__label {
+        display: block;
+      }
+}
+
+@media all and (max-width:576px) {
+    .container {
+        max-width: 292px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    footer {
+        background-color: @dark-color;
+        padding: 12px 0;
+    }
+
+    .card {
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        text-align: justify;
+        &:nth-of-type(even) {
+            flex-direction: column-reverse;
+        }
+
+        &__content {
+            flex-direction: column;
+            row-gap: 20px;
+            text-align: justify;
+
+            &:nth-of-type(even) {
+                flex-direction: column-reverse;
+            }
+
+            &__button {
+                padding: 12px 10px;
+                font-size: 13px;
+            }
+
+            & p {
+                max-width: 254px;
+            }
+        }
+
+        & img {
+            width: 250px;
+            height: 260px;
+        }
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .cards {
+        &__pattern {
+            width: 265px;
+            max-width: 280px;
+        }
+    }
+
+    .restaurant {
+        &__history {
+            flex-direction: column;
+            row-gap: 25px;
+            align-items: center;
+
+            &__description {
+                max-width: 280px;
+                text-align: justify;
+            }
+
+            &__img {
+                width: 283px;
+                height: 290px;
+            }
+
+            &__pattern {
+                width: 395px;
+                align-self: center;
+            }
+
+
+        }
+
+        &__interior {
+            &__img {
+                width: 250px;
+                height: 372px;
+            }
+        }
+    }
+    .reservation {
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        flex-direction: column;
+
+        &__description {
+
+            & p,
+            & h2 {
+                max-width: 450px;
+                text-align: center;
+            }
+
+        }
+
+        &__card {
+            grid-template-areas:
+                ". . . . . ."
+                ". name name . . ."
+                ". . . . . ."
+                ". surname surname . . ."
+                ". . . . . ."
+                ". phone phone . . ."
+                ". . . . . ."
+                ". email email . . ."
+                ". . . . . . "
+                ". visitors visitors . . ."
+                ". . . . . ."
+                ". date . . . ."
+                ". . . . . ."
+                ". time . . . ."
+                ". . . . . ."
+                ". . . . send ."
+                ". . . . . .";
+            max-width: 275px;
+            grid-template-columns: 10px minmax(100px, 250px) 66px 0 70px 10px;
+            grid-template-rows: repeat(8, 18px auto) 20px;
+            &__pattern {
+                row-gap: 4px;
+                width: 60px;
+                top: 322px;
+                left: 225px;
+            }
+        }
+    }
+
+    input {
+        padding: 10px 14px;
+    }
+
+    .swiper {
+        max-width: 292px;
+        padding: 0 20px;
+    }
+    .swiper-slide {
+        max-width: 270px;
+    }
+    .footer {
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 15px;
+        &__info {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 15px;
+            &__media{
+                column-gap: 20px;
+            }
+            &__adress img,
+            &__media img {
+                width: 28px;
+                height: 25px;
+
+            }
+        }
+    }
+
+
+}
+ @media all and (max-width:320px){
+        .container{
+            max-width: 275px;}
+            .logotip{
+                max-width: 18px;
+            }
+            h2{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .card {
+                row-gap: 20px;
+                &__content {
+                    &__button {
+                        padding: 12px 10px;
+                        font-size: 12px;
+                    }
+        
+                    & p {
+                        max-width: 240px;
+                    }
+                }
+        
+                & img {
+                    width: 200px;
+                    height: 210px;
+                }
+            }
+        
+            p {
+                font-size: 12px;
+            }
+        
+            .cards {
+                &__pattern {
+                    width: 240px;
+                }
+            }
+        
+            .restaurant {
+                &__history {
+                    &__description {
+                        max-width: 240px;
+                    }
+                    &__img {
+                        width: 242px;
+                        height: 224px;
+                    }
+        
+                    &__pattern {
+                        width: 240px;
+                        align-self: center;
+                    }
+        
+        
+                }
+        
+                &__interior {
+                    &__img {
+                        width: 232px;
+                        height: 372px;
+                    }
+                }
+            }
+            .reservation {
+                &__description {
+        
+                    & p,
+                    & h2 {
+                        max-width: 240px;
+                    }
+        
+                }
+        
+                &__card {
+                    max-width: 235px;
+                    grid-template-columns: 10px minmax(100px, 250px) 33px 0 77px 10px;
+                    grid-template-rows: repeat(8, 14px auto) 15px;
+                    &__pattern {
+                        top: 262px;
+                        left: 180px;
+                    }
+                }
+            }
+        
+            input {
+                padding: 6px 9px;
+            }
+        
+            .swiper {
+                max-width: 292px;
+                padding: 0 20px;
+            }
+            .swiper-slide {
+                max-width: 270px;
+            }
+            .footer {
+                padding-left: 15px;
+                flex-direction: column;
+                    align-items: flex-start;
+                    row-gap: 25px;
+                &__info {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    row-gap: 5px;
+                    &__media{
+                        column-gap: 20px;
+                    }
+                    &__adress img,
+                    &__media img {
+                        width: 24px;
+                        height: 20px;
+        
+                    }
+                }
+            }
+
+
+            .burger__list__item{
+                padding: 5px;
+                font-size: 14px;
+              }
+
+
+
+}
