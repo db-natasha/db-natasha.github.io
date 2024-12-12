@@ -1,0 +1,581 @@
+@media all and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+  .main__title__caption {
+    max-width: 450px;
+    font-size: 52px;
+  }
+  .main__title__text {
+    max-width: 400px;
+    font-size: 25px;
+  }
+  .main__title__button {
+    padding: 13px 32px 14px 33px;
+    font-size: 18px;
+  }
+  .main__image {
+    max-width: 445px;
+    max-height: 726px;
+  }
+  .main div:nth-of-type(2) .pattern {
+    background-color: #C71024;
+    width: 400px;
+    height: 10px;
+  }
+  .main div:nth-of-type(1) .pattern {
+    background-color: #C71024;
+    width: 450px;
+    height: 10px;
+    margin: 158px 0 77px;
+  }
+  .offers {
+    grid-template-rows: auto 40px auto;
+    grid-template-columns: 280px 30px 280px 30px 280px;
+  }
+  .offers__position {
+    padding: 20px 10px;
+    max-width: 280px;
+    row-gap: 20px;
+  }
+  .offers__position img {
+    width: 220px;
+    height: 242px;
+  }
+  .offers__position__price {
+    padding: 9px 30px;
+    font-size: 18px;
+    max-width: 90px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .card {
+    padding: 14px 30px 15px 31px;
+    max-width: 430px;
+  }
+  .card img {
+    width: 350px;
+    height: 220px;
+  }
+  .card h4 {
+    font-size: 16px;
+  }
+  .card__description__button {
+    font-size: 14px;
+    padding: 7.55px 15px;
+  }
+  .events {
+    row-gap: 45px;
+  }
+  .managers__person {
+    max-width: 300px;
+  }
+  .managers__person__job-title {
+    max-width: 300px;
+    padding: 20px 30px 19px;
+  }
+  .managers__person__image {
+    width: 300px;
+    height: 100%;
+  }
+  .managers__person__description {
+    font-size: 12px;
+    padding: 20px 25px;
+    height: 100%;
+  }
+  .swiper-slide {
+    margin: 0 10px 0 15px;
+  }
+}
+@media all and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  header {
+    padding: 10px 0;
+  }
+  .logotip {
+    font-size: 22px;
+  }
+  .navigation {
+    column-gap: 11px;
+    font-size: 14px;
+  }
+  .navigation__button {
+    top: 4px;
+    right: 18px;
+    width: 12px;
+    height: 37px;
+  }
+  .navigation__button img {
+    width: 25px;
+    height: auto;
+    object-fit: contain;
+  }
+  .navigation__text-search {
+    padding: 10px 20px 11px 21px;
+  }
+  .navigation ul {
+    column-gap: 17px;
+  }
+  .navigation form {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .main__title__caption {
+    max-width: 350px;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  .main__title__text {
+    max-width: 300px;
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .main__title__button {
+    padding: 13px 20px 14px 21px;
+    font-size: 15px;
+  }
+  .main__image {
+    max-width: 300px;
+    max-height: 420px;
+  }
+  .main div:nth-of-type(2) .pattern {
+    width: 290px;
+    height: 10px;
+  }
+  .main div:nth-of-type(1) .pattern {
+    width: 350px;
+    height: 10px;
+    margin: 130px 0 45px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .card {
+    padding: 15px 45px;
+    max-width: 650px;
+  }
+  .card img {
+    width: 550px;
+    height: 355px;
+  }
+  .card__description {
+    margin-top: 10px;
+  }
+  .card h4 {
+    font-size: 20px;
+  }
+  .offers {
+    display: grid;
+    grid-template-areas: "position_1 line_1 position_2" "position_3 line_2 position_4 " "position_5 line_3 position_6";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 320px 40px 320px;
+    row-gap: 25px;
+  }
+  .offers__pattern {
+    width: 4px;
+    height: 372px;
+  }
+  .offers__position {
+    padding: 15px 35px 16px 43px;
+    max-width: 320px;
+    row-gap: 25px;
+  }
+  .offers__position img {
+    width: 250px;
+    height: 272px;
+  }
+  .offers__position__price {
+    padding: 9px 35px;
+    font-size: 20px;
+    max-width: 109px;
+  }
+  .between-pattern,
+  .line-4 {
+    display: none;
+  }
+  .managers {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-bottom: 70px;
+  }
+  .managers__person {
+    max-width: 800px;
+  }
+  .managers__person:nth-last-of-type(2) {
+    order: -1;
+  }
+  .managers__person__image-container {
+    position: initial;
+    display: flex;
+    column-gap: 50px;
+  }
+  .managers__person__image-container:hover .managers__person__description {
+    display: block;
+    opacity: 1;
+  }
+  .managers__person__description {
+    position: initial;
+    background-color: initial;
+    color: black;
+    opacity: 1;
+    transition: none;
+    max-width: 400px;
+    align-self: center;
+    word-spacing: 2px;
+    font-size: 13px;
+    padding: 15px 20px 15px 0;
+    border-bottom: 4px solid #C71024;
+    border-top: 4px solid #C71024;
+    border-radius: 0;
+    text-indent: 1.5em;
+  }
+  .managers__person__description span {
+    display: block;
+  }
+  .managers__person__description span:first-of-type {
+    margin-bottom: 12px;
+  }
+  .swiper-slide {
+    margin: 0 27px 0 15px;
+  }
+  .swiper-wrapper {
+    max-width: 700px;
+  }
+  .swiper {
+    padding: 0 15px;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 535px;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation__button {
+    display: none;
+  }
+  .main {
+    justify-content: initial;
+  }
+  .main__title {
+    z-index: 1;
+  }
+  .main__title__caption {
+    width: 300px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-right: -110px;
+  }
+  .main__title__text {
+    margin-bottom: 20px;
+    max-width: 250px;
+    font-size: 16px;
+  }
+  .main__title__button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .main__image {
+    max-width: 300px;
+    max-height: 500px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+  .main div:nth-of-type(2) .pattern {
+    width: 210px;
+    margin-bottom: 40px;
+  }
+  .main div:nth-of-type(1) .pattern {
+    width: 235px;
+    margin: 110px 0 58px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .card {
+    padding: 15px 30px;
+    max-width: 485px;
+  }
+  .card img {
+    width: 415px;
+    height: 300px;
+  }
+  .card__description {
+    margin-top: 5px;
+  }
+  .card h4 {
+    font-size: 20px;
+  }
+  .events {
+    margin-bottom: 40px;
+  }
+  .offers {
+    display: grid;
+    grid-template-areas: "position_1 position_2" "position_3 position_4" "position_5 position_6";
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 260px);
+    row-gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .offers__pattern {
+    width: 4px;
+    height: 372px;
+    display: none;
+  }
+  .offers__position {
+    padding: 20px;
+    max-width: 270px;
+    row-gap: 15px;
+  }
+  .offers__position img {
+    width: 201px;
+    height: 202px;
+  }
+  .offers__position__price {
+    padding: 9px 30px;
+    font-size: 16px;
+    max-width: 109px;
+  }
+  .offers__position p {
+    max-width: 200px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .managers__person {
+    max-width: 520px;
+  }
+  .managers__person__image-container {
+    column-gap: 20px;
+  }
+  .managers__person__image {
+    width: 245px;
+    height: 315px;
+  }
+  .managers__person__job-title {
+    max-width: 245px;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .managers__person__description {
+    max-width: 250px;
+    padding: 15px 20px 15px 0;
+    word-spacing: 0;
+    font-size: 14px;
+  }
+  .managers__person__description span:first-of-type {
+    margin-bottom: 0;
+  }
+  .managers__person__description span:nth-of-type(2) {
+    display: none;
+  }
+  footer {
+    background-color: black;
+    padding: 12px 0;
+  }
+  .footer__info {
+    column-gap: 27px;
+  }
+  .footer__info__media {
+    column-gap: 20px;
+  }
+  .footer__info__adress img,
+  .footer__info__media img {
+    width: 28px;
+    height: 20px;
+  }
+  .swiper-slide {
+    margin: 0 29px 0 4px;
+  }
+  .swiper-wrapper {
+    max-width: 510px;
+  }
+  .burger__label {
+    display: block;
+  }
+}
+@media all and (max-width: 576px) {
+  .container {
+    max-width: 292px;
+  }
+  .main {
+    justify-content: center;
+  }
+  .main__title {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__title__caption {
+    width: 260px;
+    font-size: 22px;
+  }
+  .main__title__text {
+    max-width: 230px;
+    font-size: 14px;
+  }
+  .main__title__button {
+    padding: 10px 25px;
+    font-size: 14px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+  }
+  .main__image {
+    display: none;
+  }
+  .main div:nth-of-type(2) .pattern {
+    display: none;
+  }
+  .main div:nth-of-type(1) .pattern {
+    width: 210px;
+    height: 4px;
+    margin: 70px 0 30px;
+    justify-self: center;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .offers {
+    display: grid;
+    grid-template-areas: "position_1" "position_2" "position_3" "position_4" "position_5" "position_6";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 235px;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .offers__pattern {
+    display: none;
+  }
+  .offers__position {
+    padding: 15px;
+    max-width: 235px;
+    row-gap: 12px;
+  }
+  .offers__position img {
+    width: 152px;
+    height: 167px;
+  }
+  .offers__position__price {
+    padding: 9px 30px;
+    font-size: 16px;
+    max-width: 109px;
+  }
+  .offers__position p {
+    max-width: 200px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .managers {
+    align-items: center;
+  }
+  .managers__person {
+    max-width: 245px;
+  }
+  .managers__person__image-container {
+    flex-direction: column;
+  }
+  .managers__person__image {
+    width: 245px;
+    height: 315px;
+  }
+  .managers__person__description {
+    text-align: justify;
+    text-indent: 0;
+    padding: 15px 0;
+  }
+  .footer {
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 15px;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+  }
+  .footer__info__media {
+    column-gap: 20px;
+  }
+  .footer__info__adress img,
+  .footer__info__media img {
+    width: 28px;
+    height: 25px;
+  }
+  section:nth-of-type(3) {
+    display: none;
+  }
+}
+@media all and (max-width: 320px) {
+  .container {
+    max-width: 275px;
+    margin: 0 auto;
+  }
+  .main__title__caption {
+    width: 250px;
+  }
+  .main__title__text {
+    max-width: 220px;
+  }
+  h3 {
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .offers__position img {
+    width: 149px;
+    height: 162px;
+  }
+  .offers__position__price {
+    padding: 9px 20px;
+    font-size: 14px;
+    max-width: 85px;
+  }
+  .managers__person {
+    max-width: 230px;
+  }
+  .managers__person__image {
+    width: 230px;
+    height: 296px;
+  }
+  .footer {
+    padding-left: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 25px;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+  }
+  .footer__info__media {
+    column-gap: 20px;
+  }
+  .footer__info__adress img,
+  .footer__info__media img {
+    width: 24px;
+    height: 20px;
+  }
+}
