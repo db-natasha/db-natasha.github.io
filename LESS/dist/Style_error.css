@@ -308,6 +308,9 @@ footer {
     width: 150px;
     margin: 0 auto;
   }
+  .navigation ul {
+    column-gap: 17px;
+  }
   .problem-content {
     column-gap: 10px;
   }
