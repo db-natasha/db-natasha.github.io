@@ -1,0 +1,491 @@
+@media all and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+  .card {
+    column-gap: 60px;
+  }
+  .card img {
+    width: 260px;
+    height: 328px;
+  }
+  p {
+    max-width: 400px;
+  }
+  .cards__pattern {
+    width: 940px;
+  }
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    overflow: hidden;
+  }
+  .restaurant__history__description {
+    max-width: 450px;
+  }
+  .restaurant__history__img {
+    width: 350px;
+    height: 300px;
+  }
+  .restaurant__interior__img {
+    width: 283px;
+    height: 380px;
+  }
+  .swiper {
+    max-width: 940px;
+    padding: 0 15px;
+  }
+  .swiper-slide {
+    max-width: 283px;
+  }
+  .reservation {
+    justify-content: center;
+    column-gap: 60px;
+  }
+  .reservation__description {
+    max-width: 366px;
+  }
+  .reservation__card {
+    grid-template-columns: 17px minmax(100px, 250px) 30px 35px 108px 19px;
+    grid-template-rows: repeat(5, 19px auto) 46px;
+  }
+  .reservation__card__pattern {
+    row-gap: 6px;
+    width: 101px;
+    position: absolute;
+    top: 144px;
+    left: 370px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+}
+@media all and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  header {
+    padding: 10px 0;
+  }
+  .logotip {
+    font-size: 22px;
+  }
+  .navigation {
+    column-gap: 11px;
+    font-size: 14px;
+  }
+  .navigation__button {
+    top: 4px;
+    right: 18px;
+    width: 12px;
+    height: 37px;
+  }
+  .navigation__button img {
+    width: 25px;
+    height: auto;
+    object-fit: contain;
+  }
+  .navigation__text-search {
+    padding: 10px 20px 11px 21px;
+  }
+  .navigation form {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .card {
+    column-gap: 25px;
+  }
+  .card__content {
+    flex-direction: column;
+    row-gap: 25px;
+    text-align: right;
+  }
+  .card__content:nth-child(odd) {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .card__content p {
+    max-width: 340px;
+  }
+  .card img {
+    width: 285px;
+    height: 275px;
+  }
+  p {
+    max-width: 300px;
+    font-size: 14px;
+  }
+  .cards {
+    margin-bottom: 20px;
+  }
+  .cards__pattern {
+    width: 634px;
+  }
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    overflow: hidden;
+  }
+  .restaurant__history__description {
+    max-width: 450px;
+  }
+  .restaurant__history__img {
+    width: 350px;
+    height: 300px;
+  }
+  .restaurant__interior__img {
+    width: 320px;
+    height: 440px;
+  }
+  .swiper {
+    max-width: 700px;
+    padding: 0 15px;
+  }
+  .swiper-slide {
+    max-width: 325px;
+  }
+  .reservation {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    flex-direction: column;
+  }
+  .reservation__description p,
+  .reservation__description h2 {
+    max-width: 450px;
+    text-align: center;
+  }
+  .reservation__card {
+    grid-template-areas: ". . . . . ." ". name name . . ." ". . . . . ." ". surname surname . . ." ". . . . . ." ". phone phone . . ." ". . . . . ." ". email email . . ." ". . . . . . " ". visitors visitors . . ." ". . . . . ." ". date . . . ." ". . . . . ." ". time . . . ." ". . . . . ." ". . . . send ." ". . . . . .";
+    max-width: 550px;
+    grid-template-columns: 17px minmax(100px, 250px) 100px 20px 100px 19px;
+    grid-template-rows: repeat(8, 25px auto) 30px;
+  }
+  .reservation__card__pattern {
+    row-gap: 6px;
+    width: 101px;
+    position: absolute;
+    top: 293px;
+    left: 430px;
+  }
+  input {
+    padding: 10px 18px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 535px;
+  }
+  .navigation {
+    display: none;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  footer {
+    background-color: black;
+    padding: 12px 0;
+  }
+  .card {
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    text-align: justify;
+  }
+  .card:nth-of-type(odd) {
+    flex-direction: column-reverse;
+  }
+  .card:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .card__content {
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: justify;
+  }
+  .card__content:nth-child(odd) {
+    flex-direction: column-reverse;
+    text-align: justify;
+  }
+  .card__content__button {
+    padding: 14px 15px;
+    font-size: 15px;
+  }
+  .card__content p {
+    max-width: 340px;
+  }
+  .card img {
+    width: 300px;
+    height: 300px;
+  }
+  p {
+    max-width: 300px;
+    font-size: 14px;
+  }
+  .cards__pattern {
+    width: 510px;
+  }
+  .restaurant__history {
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+  }
+  .restaurant__history__description {
+    max-width: 464px;
+    text-align: justify;
+  }
+  .restaurant__history__img {
+    width: 350px;
+    height: 300px;
+  }
+  .restaurant__history__pattern {
+    width: 395px;
+    align-self: center;
+  }
+  .restaurant__interior__img {
+    width: 228px;
+    height: 372px;
+  }
+  .reservation__card {
+    max-width: 445px;
+  }
+  .reservation__card__pattern {
+    top: 370px;
+    left: 365px;
+  }
+  .swiper {
+    max-width: 510px;
+    padding: 0 10px;
+  }
+  .swiper-slide {
+    max-width: 230px;
+  }
+  .footer__info__adress img,
+  .footer__info__media img {
+    width: 28px;
+    height: 25px;
+  }
+  .burger__label {
+    display: block;
+  }
+}
+@media all and (max-width: 576px) {
+  .container {
+    max-width: 292px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  footer {
+    background-color: black;
+    padding: 12px 0;
+  }
+  .card {
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    text-align: justify;
+  }
+  .card:nth-of-type(even) {
+    flex-direction: column-reverse;
+  }
+  .card__content {
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: justify;
+  }
+  .card__content:nth-of-type(even) {
+    flex-direction: column-reverse;
+  }
+  .card__content__button {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+  .card__content p {
+    max-width: 254px;
+  }
+  .card img {
+    width: 250px;
+    height: 260px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .cards__pattern {
+    width: 265px;
+    max-width: 280px;
+  }
+  .restaurant__history {
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+  }
+  .restaurant__history__description {
+    max-width: 280px;
+    text-align: justify;
+  }
+  .restaurant__history__img {
+    width: 283px;
+    height: 290px;
+  }
+  .restaurant__history__pattern {
+    width: 395px;
+    align-self: center;
+  }
+  .restaurant__interior__img {
+    width: 250px;
+    height: 372px;
+  }
+  .reservation {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    flex-direction: column;
+  }
+  .reservation__description p,
+  .reservation__description h2 {
+    max-width: 450px;
+    text-align: center;
+  }
+  .reservation__card {
+    grid-template-areas: ". . . . . ." ". name name . . ." ". . . . . ." ". surname surname . . ." ". . . . . ." ". phone phone . . ." ". . . . . ." ". email email . . ." ". . . . . . " ". visitors visitors . . ." ". . . . . ." ". date . . . ." ". . . . . ." ". time . . . ." ". . . . . ." ". . . . send ." ". . . . . .";
+    max-width: 275px;
+    grid-template-columns: 10px minmax(100px, 250px) 66px 0 70px 10px;
+    grid-template-rows: repeat(8, 18px auto) 20px;
+  }
+  .reservation__card__pattern {
+    row-gap: 4px;
+    width: 60px;
+    top: 322px;
+    left: 225px;
+  }
+  input {
+    padding: 10px 14px;
+  }
+  .swiper {
+    max-width: 292px;
+    padding: 0 20px;
+  }
+  .swiper-slide {
+    max-width: 270px;
+  }
+  .footer {
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 15px;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+  }
+  .footer__info__media {
+    column-gap: 20px;
+  }
+  .footer__info__adress img,
+  .footer__info__media img {
+    width: 28px;
+    height: 25px;
+  }
+}
+@media all and (max-width: 320px) {
+  .container {
+    max-width: 275px;
+  }
+  .logotip {
+    max-width: 18px;
+  }
+  h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .card {
+    row-gap: 20px;
+  }
+  .card__content__button {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+  .card__content p {
+    max-width: 240px;
+  }
+  .card img {
+    width: 200px;
+    height: 210px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .cards__pattern {
+    width: 240px;
+  }
+  .restaurant__history__description {
+    max-width: 240px;
+  }
+  .restaurant__history__img {
+    width: 242px;
+    height: 224px;
+  }
+  .restaurant__history__pattern {
+    width: 240px;
+    align-self: center;
+  }
+  .restaurant__interior__img {
+    width: 232px;
+    height: 372px;
+  }
+  .reservation__description p,
+  .reservation__description h2 {
+    max-width: 240px;
+  }
+  .reservation__card {
+    max-width: 235px;
+    grid-template-columns: 10px minmax(100px, 250px) 33px 0 77px 10px;
+    grid-template-rows: repeat(8, 14px auto) 15px;
+  }
+  .reservation__card__pattern {
+    top: 262px;
+    left: 180px;
+  }
+  input {
+    padding: 6px 9px;
+  }
+  .swiper {
+    max-width: 292px;
+    padding: 0 20px;
+  }
+  .swiper-slide {
+    max-width: 270px;
+  }
+  .footer {
+    padding-left: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 25px;
+  }
+  .footer__info {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+  }
+  .footer__info__media {
+    column-gap: 20px;
+  }
+  .footer__info__adress img,
+  .footer__info__media img {
+    width: 24px;
+    height: 20px;
+  }
+  .burger__list__item {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
