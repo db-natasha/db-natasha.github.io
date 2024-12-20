@@ -115,28 +115,28 @@
     }
     
     h3{
-        font-size: 22px;
+        font-size: 20px;
         font-family:@main-text;
         text-align: center;
-        max-width: 200px;
+        max-width: 170px;
     }
     
     .position{
         max-width: 680px;
-        display: flex;
-        flex-direction: row;
-        column-gap:43px;
+        display:grid;
+        grid-template-columns:170px auto 121px auto;
+        column-gap:30px;
         align-items: center;
         &__price{
-            max-width: 1255px;
+            max-width: 100px;
             border: 3px solid @dark-color;
             border-radius: 13px;
             display: flex;
             &__small,&__large{
-                font-size: 18px;
+                font-size: 14px;
                 font-family: @text;
                 padding: 10px 0;
-                width:62.5px ;
+                width:46.5px ;
                 text-align: center;
             }
             &__small{
@@ -156,6 +156,7 @@
 
       & p {
         max-width: 250px;
+        font-size:14px ;
     }
     
     }
