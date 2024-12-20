@@ -130,10 +130,38 @@ a {
       background-color: @dark-color;
       color: @light-color;
       border-radius: 13px;
-      border: 0;
-      padding: 15px 34px 16px 35px;
+      padding: 17px 39px 14px 38px;
       font-size: 20px;
       font-family: @text;
+      z-index: 1;
+      position: relative;
+      font-size: 17px;
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.7);
+      transition: all 500ms;
+      overflow: hidden;
+  
+      &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 0;
+          border-radius: 13px;
+          background-color: @light-color;
+          z-index: -1;
+          transition: all 500ms;
+      }
+  
+      &:hover {
+          background:@light-color;
+          color: @dark-color;
+          
+          &::before {
+              width: 100%;
+          }
+      }
+  
     }
   }
 
@@ -186,12 +214,14 @@ h3 {
   justify-items: center;
   justify-content: center;
   margin-bottom: 79px;
-
   &__pattern {
     width: 4px;
     height: 372px;
   }
-
+  a{
+    text-decoration: none;
+    color:@dark-color
+  }
   &__position {
     border: 3px solid @dark-color;
     border-radius: 13px;
@@ -201,7 +231,10 @@ h3 {
     flex-direction: column;
     row-gap: 25px;
     align-items: center;
-
+    &:hover{
+      outline: 5px solid @pattern-color;
+      border: 0;
+    }
     & img {
       width: 270px;
       height: 292px;
@@ -276,6 +309,7 @@ p {
   border-radius: 13px;
   padding: 22px 36px 21px;
  max-width: 575px;
+ transition: background-color 0.8s, color 0.8s;
   &:nth-child(odd) {
     background-color: @dark-color;
     color: @light-color;
@@ -284,6 +318,19 @@ p {
         color: @dark-color;
         background-color: @light-color;
       }
+    }
+    &:hover{
+     color: @dark-color;
+     background-color: @light-color;
+    .card__description {
+      &__button {
+        background-color: @dark-color;
+        color: @light-color;
+      }
+    }
+    & img{
+      border: 3px solid @dark-color;
+    }
     }
   }
 
@@ -308,8 +355,19 @@ p {
       border-radius: 13px;
       font-family: @text;
     }
-
-
+  }
+  &:hover{
+    background-color: @dark-color;
+    color: @light-color;
+    .card__description {
+      &__button {
+        color: @dark-color;
+        background-color: @light-color;
+      }
+    }
+    & img{
+      border: 3px solid @light-color;
+    }
   }
 }
 
@@ -336,7 +394,7 @@ p {
   display: flex;
   justify-content: center;
   column-gap: 27px;
-  margin-bottom: 126px;
+  margin-bottom: 124px;
 
   &__person {
     max-width: 379px;
