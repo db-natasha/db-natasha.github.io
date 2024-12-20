@@ -9,8 +9,8 @@
 }
 header {
   background-color: black;
-  padding: 15px 0;
-  margin-bottom: 59px;
+  padding: 13px 0;
+  margin-bottom: 62px;
 }
 .logotip {
   font-family: "Bruno Ace SC", sans-serif;
@@ -63,7 +63,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 28px;
 }
 .button {
   background-color: white;
