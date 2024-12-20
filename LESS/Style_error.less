@@ -129,14 +129,11 @@ a {
 button {
     background-color: @dark-color;
     border-radius: 13px;
-    padding: 12px 21px;
+    padding:9px 6px 13px 17px;
     color: @light-color;
     width: 114px;
-
-    & a {
-        font-size: 24px;
-        font-family: @text;
-    }
+    font-size: 24px;
+    font-family: @text;
 }
 
 p {
@@ -167,36 +164,31 @@ span {
 footer {
     background-color: @dark-color;
     padding: 15px 0;
-}
-
-.footer {
+  }
+  
+  .footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    padding:0 25px;
+  
     &__info {
         display: flex;
         align-items: center;
         column-gap: 78px;
-
+  
         &__media {
             column-gap: 31px;
         }
-
+  
         &__adress,
         &__media {
             color: @light-color;
             display: flex;
             align-items: center;
         }
-
-        &__adress p {
-            font-family: @text;
-            opacity: 1;
-            font-size: 16px;
-        }
     }
-}
+  }
 
 .burger__checkbox {
     position: absolute;
