@@ -110,10 +110,34 @@ a:hover {
   background-color: black;
   color: white;
   border-radius: 13px;
-  border: 0;
-  padding: 15px 34px 16px 35px;
+  padding: 17px 39px 14px 38px;
   font-size: 20px;
   font-family: "Lexend", sans-serif;
+  z-index: 1;
+  position: relative;
+  font-size: 17px;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.7);
+  transition: all 500ms;
+  overflow: hidden;
+}
+.main__title__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 13px;
+  background-color: white;
+  z-index: -1;
+  transition: all 500ms;
+}
+.main__title__button:hover {
+  background: white;
+  color: black;
+}
+.main__title__button:hover::before {
+  width: 100%;
 }
 .main__image {
   max-width: 534px;
@@ -158,6 +182,10 @@ h3 {
   width: 4px;
   height: 372px;
 }
+.offers a {
+  text-decoration: none;
+  color: black;
+}
 .offers__position {
   border: 3px solid black;
   border-radius: 13px;
@@ -167,6 +195,10 @@ h3 {
   flex-direction: column;
   row-gap: 25px;
   align-items: center;
+}
+.offers__position:hover {
+  outline: 5px solid #C71024;
+  border: 0;
 }
 .offers__position img {
   width: 270px;
@@ -232,6 +264,7 @@ p {
   border-radius: 13px;
   padding: 22px 36px 21px;
   max-width: 575px;
+  transition: background-color 0.8s, color 0.8s;
 }
 .card:nth-child(odd) {
   background-color: black;
@@ -240,6 +273,17 @@ p {
 .card:nth-child(odd) .card__description__button {
   color: black;
   background-color: white;
+}
+.card:nth-child(odd):hover {
+  color: black;
+  background-color: white;
+}
+.card:nth-child(odd):hover .card__description__button {
+  background-color: black;
+  color: white;
+}
+.card:nth-child(odd):hover img {
+  border: 3px solid black;
 }
 .card img {
   width: 499px;
@@ -261,6 +305,17 @@ p {
   border-radius: 13px;
   font-family: "Lexend", sans-serif;
 }
+.card:hover {
+  background-color: black;
+  color: white;
+}
+.card:hover .card__description__button {
+  color: black;
+  background-color: white;
+}
+.card:hover img {
+  border: 3px solid white;
+}
 .events {
   display: flex;
   flex-direction: column;
@@ -281,7 +336,7 @@ p {
   display: flex;
   justify-content: center;
   column-gap: 27px;
-  margin-bottom: 126px;
+  margin-bottom: 124px;
 }
 .managers__person {
   max-width: 379px;
