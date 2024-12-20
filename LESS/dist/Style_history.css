@@ -9,8 +9,8 @@
 }
 header {
   background-color: black;
-  padding: 15px 0;
-  margin-bottom: 57px;
+  padding: 13px 0;
+  margin-bottom: 62px;
 }
 .logotip {
   font-family: "Bruno Ace SC", sans-serif;
@@ -63,7 +63,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 28px;
 }
 .button {
   background-color: white;
@@ -138,11 +138,11 @@ p {
   z-index: -1;
   transition: all 500ms;
 }
-.card__content__button:hover {
+.card__content__button:hover:hover {
   background: white;
   color: black;
 }
-.card__content__button:hover::before {
+.card__content__button:hover:hover::before {
   width: 100%;
 }
 .card__content__button a {
@@ -197,6 +197,7 @@ p {
   display: flex;
   column-gap: 36px;
   justify-content: center;
+  margin-bottom: -25px;
 }
 .restaurant__interior__img {
   width: 355px;
@@ -311,6 +312,7 @@ footer {
 }
 .swiper-slide {
   max-width: 355px;
+  margin-bottom: 25px;
 }
 .swiper {
   max-width: 1135px;
