@@ -194,8 +194,8 @@
   }
   .position {
     max-width: 500px;
+    display: flex;
     flex-direction: column;
-    display:flex;
     row-gap: 25px;
     justify-content: center;
     align-items: center;
